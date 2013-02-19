@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<div class="span9">
+
+
+<p>
+	<table class="table-striped">
+		<th>Orders</th>
+	<%= customer_order_information(@customer) %>
+	</table>
+</p>
+
+<p>
+  <b>Name Of Company:</b>
+  <%= @customer.company_name %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @customer.phone %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @customer.contact_name %>
+</p>
+
+
+<%= link_to 'Edit', edit_customer_path(@customer) %> |
+<%= link_to 'Back', customers_path %>
+
+</div>

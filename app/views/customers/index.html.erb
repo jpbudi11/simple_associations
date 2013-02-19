@@ -1,0 +1,35 @@
+<h1>Listing customers</h1>
+
+<div class="fluid-container">
+  <div class="row span9">
+  <table class="table table-striped">
+    <tr>
+      <th>Name Of Company</th>
+      <th>Phone Contact</th>
+      <th>Contact Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+
+  <% @customers.each do |customer| %>
+    <tr>
+      <td><b><%= customer.company_name %></b></td>
+      <td><%= customer.phone %></td>
+      <td><%= customer.contact_name %></td>
+      <td><%= link_to 'Show', customer %></td>
+      <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
+      <td><%= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <%= customer_order_information(customer) %>  
+    </tr>
+  <% end %>
+  </table>
+
+  <br />
+  </div>
+
+
+  <div class="row span9">
+    <%= link_to 'New Customer', new_customer_path %>
+  </div>
+</div>
