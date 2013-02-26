@@ -2110,7 +2110,7 @@ table {
 
 .table-striped tbody > tr:nth-child(odd) > td,
 .table-striped tbody > tr:nth-child(odd) > th {
-  background-color: orange;
+  background-color: #E0D78C;
 }
 
 .table-hover tbody tr:hover td,
@@ -5996,7 +5996,7 @@ a.badge:hover {
   font-weight: 200;
   line-height: 30px;
   color: inherit;
-  background-color: blue;
+  background-color: #B5AC5F;
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
