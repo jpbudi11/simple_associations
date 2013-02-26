@@ -2,9 +2,6 @@ SimpleAssociationsNew::Application.routes.draw do
   resources :items
 
 
-  
-
-
   resources :customers do
     resources :orders
   end

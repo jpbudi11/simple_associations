@@ -16,7 +16,7 @@
         <td><%= order.quantity %></td>
         <td><%= order.item_name %></td>
         <td><%= order.total_cost %></td>
-        <th><%= link_to order.customer_name, order.customer %>
+        <th><%= order.customer_name %>
         <td><%= link_to 'Show', order %></td>
         <td><%= link_to 'Edit', edit_order_path(order) %></td>
         <td><%= link_to 'Destroy', order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
