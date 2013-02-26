@@ -12,8 +12,11 @@
   <% end %>
 
 <div class="field">
+	<br/>
+	<br/>
     <%= f.label :customer_name %> <br />
-    <%= f.collection_select :customer_name, Customer.all, :company_name, :company_name %>
+
+    <%= f.text_field :customer_name, :value => @order.customer.company_name %>
   </div>
 
   <div class="field">

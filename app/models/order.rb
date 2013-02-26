@@ -1,6 +1,6 @@
 class Order < ActiveRecord::Base
   attr_accessible :item_name, :quantity, :total_cost, :customer_id, :customer_name, :item_id
-  has_one :item
+  belongs_to :item
   belongs_to :customer
   
 
